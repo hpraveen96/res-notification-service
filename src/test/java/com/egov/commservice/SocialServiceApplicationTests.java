@@ -1,4 +1,4 @@
-package com.egov.matchservice;
+package com.egov.commservice;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
