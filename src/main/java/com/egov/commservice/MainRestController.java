@@ -17,7 +17,9 @@ import reactor.core.publisher.Mono;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/v1")
@@ -160,4 +162,12 @@ public class MainRestController
 
         }
     }
+
+    @PostMapping("read/messages")
+    public ResponseEntity<?> getMessages(@RequestBody MessagePage messagePage)
+    {
+        List<Optional<Message>> messages = messagePage.getMessagesList().stream().map(messageid -> messageRepository.findById(messageid)).toList();
+        return ResponseEntity.ok(messages.stream().filter(Optional::isPresent).map(Optional::get).collect(Collectors.toList()));
+    }
+
 }
