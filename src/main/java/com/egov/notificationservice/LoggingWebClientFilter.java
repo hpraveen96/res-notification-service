@@ -1,4 +1,4 @@
-package com.egov.commservice;
+package com.egov.notificationservice;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

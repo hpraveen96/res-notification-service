@@ -1,4 +1,4 @@
-package com.egov.commservice;
+package com.egov.notificationservice;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

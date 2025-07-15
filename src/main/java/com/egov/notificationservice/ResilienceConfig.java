@@ -1,4 +1,4 @@
-package com.egov.commservice;
+package com.egov.notificationservice;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.retry.RetryConfig;

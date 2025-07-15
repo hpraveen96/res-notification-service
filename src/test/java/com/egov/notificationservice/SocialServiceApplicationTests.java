@@ -1,4 +1,4 @@
-package com.egov.commservice;
+package com.egov.notificationservice;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

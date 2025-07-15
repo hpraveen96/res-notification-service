@@ -1,4 +1,4 @@
-package com.egov.commservice;
+package com.egov.notificationservice;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
